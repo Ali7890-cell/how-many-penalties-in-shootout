@@ -1,0 +1,1098 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>How Many Penalties Does Each Team Take in a Shootout?</title>
+<meta name="description" content="Find out how many penalties each team takes in a football shootout, how the five-kick format works, and what happens when scores remain level.">
+<meta name="keywords" content="how many penalties does each team take in a shootout, football penalty shootout rules, five penalty kicks, sudden death penalties, penalty shootout format">
+
+<style>
+:root {
+    --navy: #101a31;
+    --navy2: #172746;
+    --lime: #c7f36b;
+    --blue: #70c9ff;
+    --white: #f7f9fc;
+    --muted: #64748b;
+    --line: #e3eaf2;
+    --light: #f1f5fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef2f7;
+    color: #202b3d;
+    line-height: 1.75;
+}
+
+a {
+    color: inherit;
+}
+
+.site-header {
+    background: var(--navy);
+    color: white;
+    padding: 17px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.brand {
+    font-size: 23px;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.brand span {
+    color: var(--lime);
+}
+
+.header-note {
+    font-size: 12px;
+    color: #c5d1e3;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.hero {
+    background:
+    radial-gradient(circle at 85% 20%, rgba(112,201,255,.17), transparent 30%),
+    linear-gradient(125deg, #101a31, #203c61);
+    color: white;
+    padding: 75px 7% 85px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero:after {
+    content: "⚽";
+    position: absolute;
+    right: 8%;
+    bottom: -55px;
+    font-size: 190px;
+    opacity: .07;
+    transform: rotate(-18deg);
+}
+
+.hero-inner {
+    max-width: 1050px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.eyebrow {
+    display: inline-block;
+    color: var(--lime);
+    border: 1px solid rgba(199,243,107,.45);
+    padding: 6px 13px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(34px, 5vw, 58px);
+    line-height: 1.12;
+    max-width: 850px;
+    letter-spacing: -1.7px;
+    margin-bottom: 22px;
+}
+
+.hero p {
+    max-width: 750px;
+    color: #d5dfed;
+    font-size: 17px;
+}
+
+.hero-meta {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+    margin-top: 27px;
+    color: #b9c9df;
+    font-size: 13px;
+}
+
+.page-wrap {
+    max-width: 1120px;
+    margin: -35px auto 60px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.answer-card {
+    background: white;
+    border-radius: 17px;
+    padding: 30px;
+    box-shadow: 0 15px 40px rgba(20,39,70,.09);
+    display: grid;
+    grid-template-columns: 1fr 190px;
+    align-items: center;
+    gap: 20px;
+    border-left: 6px solid var(--lime);
+}
+
+.answer-card h2 {
+    color: var(--navy);
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.answer-card p {
+    color: #536176;
+}
+
+.answer-number {
+    background: var(--navy);
+    border-radius: 15px;
+    text-align: center;
+    padding: 18px 10px;
+    color: white;
+}
+
+.answer-number strong {
+    display: block;
+    color: var(--lime);
+    font-size: 55px;
+    line-height: 1.1;
+}
+
+.answer-number span {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.content-layout {
+    display: grid;
+    grid-template-columns: 275px minmax(0, 1fr);
+    gap: 28px;
+    align-items: start;
+    margin-top: 30px;
+}
+
+.sidebar {
+    background: white;
+    padding: 24px;
+    border-radius: 15px;
+    position: sticky;
+    top: 20px;
+    box-shadow: 0 7px 25px rgba(20,39,70,.05);
+}
+
+.sidebar h3 {
+    font-size: 16px;
+    color: var(--navy);
+    margin-bottom: 15px;
+}
+
+.sidebar ol {
+    padding-left: 19px;
+}
+
+.sidebar li {
+    padding: 5px 0;
+    color: #536176;
+    font-size: 13px;
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: #5c9d19;
+}
+
+.article {
+    background: white;
+    padding: 36px;
+    border-radius: 16px;
+    box-shadow: 0 7px 25px rgba(20,39,70,.05);
+    min-width: 0;
+}
+
+.article h2 {
+    font-size: 27px;
+    line-height: 1.3;
+    color: var(--navy);
+    margin: 38px 0 16px;
+    letter-spacing: -.5px;
+}
+
+.article h2:first-child {
+    margin-top: 0;
+}
+
+.article h3 {
+    font-size: 19px;
+    color: #203b61;
+    margin: 25px 0 10px;
+}
+
+.article p {
+    margin-bottom: 17px;
+    color: #46546a;
+}
+
+.article a {
+    color: #347cb5;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid #a9d8f6;
+}
+
+.article a:hover {
+    color: #1b5d91;
+}
+
+.article ul, .article ol {
+    padding-left: 24px;
+    margin: 12px 0 20px;
+    color: #46546a;
+}
+
+.article li {
+    margin-bottom: 9px;
+    padding-left: 4px;
+}
+
+.highlight {
+    background: #f1f8e6;
+    border: 1px solid #dceebc;
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin: 22px 0;
+}
+
+.highlight strong {
+    color: #355c15;
+}
+
+.kick-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin: 24px 0;
+}
+
+.kick {
+    background: var(--navy);
+    color: white;
+    border-radius: 12px;
+    padding: 16px 5px;
+    text-align: center;
+}
+
+.kick strong {
+    display: block;
+    color: var(--lime);
+    font-size: 25px;
+}
+
+.kick span {
+    font-size: 11px;
+    color: #d3deed;
+}
+
+.timeline {
+    margin: 25px 0;
+    border-left: 3px solid var(--lime);
+    padding-left: 23px;
+}
+
+.timeline-item {
+    margin-bottom: 22px;
+    position: relative;
+}
+
+.timeline-item:before {
+    content: "";
+    position: absolute;
+    left: -31px;
+    top: 7px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: var(--lime);
+    border: 3px solid white;
+    box-shadow: 0 0 0 1px #a8cf59;
+}
+
+.timeline-item strong {
+    display: block;
+    color: var(--navy);
+    margin-bottom: 4px;
+}
+
+.comparison {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 22px 0;
+    font-size: 14px;
+}
+
+.comparison th {
+    background: var(--navy);
+    color: white;
+    text-align: left;
+    padding: 13px;
+}
+
+.comparison td {
+    padding: 13px;
+    border-bottom: 1px solid var(--line);
+    color: #46546a;
+}
+
+.comparison tr:nth-child(even) {
+    background: #f5f8fc;
+}
+
+.mini-card {
+    background: #edf7ff;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 23px 0;
+    border-left: 4px solid var(--blue);
+}
+
+.mini-card h3 {
+    margin-top: 0;
+    color: #164c77;
+}
+
+.faq-item {
+    border: 1px solid var(--line);
+    border-radius: 11px;
+    padding: 18px;
+    margin: 12px 0;
+    background: #fbfcfe;
+}
+
+.faq-item h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+}
+
+.faq-item p {
+    margin: 0;
+}
+
+.related {
+    background: var(--navy);
+    color: white;
+    padding: 25px;
+    border-radius: 14px;
+    margin-top: 35px;
+}
+
+.related h2 {
+    color: var(--lime);
+    font-size: 22px;
+    margin: 0 0 14px;
+}
+
+.related p {
+    color: #d1dbea;
+}
+
+.related a {
+    color: var(--lime);
+    border-color: rgba(199,243,107,.4);
+}
+
+.source-note {
+    background: #f6f8fb;
+    border-radius: 10px;
+    padding: 17px;
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+.source-note a {
+    overflow-wrap: anywhere;
+}
+
+.site-footer {
+    background: #0b1426;
+    color: #bdc9d9;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 13px;
+}
+
+.site-footer strong {
+    color: var(--lime);
+}
+
+@media(max-width: 850px) {
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .sidebar ol {
+        columns: 2;
+    }
+}
+
+@media(max-width: 600px) {
+    .hero {
+        padding: 55px 22px 75px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .answer-card {
+        grid-template-columns: 1fr;
+        padding: 22px;
+    }
+
+    .answer-number {
+        max-width: 180px;
+    }
+
+    .article {
+        padding: 23px 19px;
+    }
+
+    .article h2 {
+        font-size: 23px;
+    }
+
+    .kick-grid {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 5px;
+    }
+
+    .kick {
+        padding: 12px 2px;
+    }
+
+    .kick strong {
+        font-size: 19px;
+    }
+
+    .kick span {
+        font-size: 9px;
+    }
+
+    .sidebar ol {
+        columns: 1;
+    }
+
+    .comparison {
+        font-size: 12px;
+    }
+
+    .comparison td, .comparison th {
+        padding: 9px 7px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="brand">FOOTBALL<span>RULES</span></div>
+    <div class="header-note">Football guides · Match rules · Explained</div>
+</header>
+
+<section class="hero">
+    <div class="hero-inner">
+        <span class="eyebrow">Penalty Shootout Guide</span>
+        <h1>How Many Penalties Does Each Team Take in a Shootout?</h1>
+        <p>
+            Penalty shootouts can decide some of football's biggest matches.
+            Discover how the five-kick format works, when a team wins early,
+            and what happens when both sides remain level.
+        </p>
+        <div class="hero-meta">
+            <span>Football Rules</span>
+            <span>Easy-to-follow guide</span>
+            <span>Penalty Shootouts</span>
+        </div>
+    </div>
+</section>
+
+<div class="page-wrap">
+
+    <section class="answer-card">
+        <div>
+            <h2>The quick answer</h2>
+            <p>
+                In a standard football penalty shootout, each team normally
+                takes up to five kicks in the opening round. The teams take
+                turns, and the shootout can end before all ten kicks if one
+                side has an unbeatable lead. If the scores are level after
+                five kicks each, the contest continues into sudden death.
+            </p>
+        </div>
+        <div class="answer-number">
+            <strong>5</strong>
+            <span>Initial kicks per team</span>
+        </div>
+    </section>
+
+    <div class="content-layout">
+
+        <aside class="sidebar">
+            <h3>In this article</h3>
+            <ol>
+                <li><a href="#basic-rule">The basic five-kick rule</a></li>
+                <li><a href="#how-it-works">How a shootout works</a></li>
+                <li><a href="#early-ending">When it ends early</a></li>
+                <li><a href="#sudden-death">Sudden death explained</a></li>
+                <li><a href="#player-order">Who takes the penalties?</a></li>
+                <li><a href="#rules">Important shootout rules</a></li>
+                <li><a href="#strategy">Why the order matters</a></li>
+                <li><a href="#mistakes">Common misunderstandings</a></li>
+                <li><a href="#faq">Frequently asked questions</a></li>
+            </ol>
+        </aside>
+
+        <main class="article">
+
+            <h2 id="basic-rule">How Many Penalties Does Each Team Take in a Shootout?</h2>
+
+            <p>
+                In a standard 11-a-side football match, each team is normally
+                given five penalty kicks at the beginning of a shootout.
+                These kicks are taken alternately, meaning one team takes a
+                kick before the other team takes its next attempt. The aim is
+                to score more penalties than the opposition.
+            </p>
+
+            <p>
+                However, five is not always the final number of kicks.
+                A shootout can finish before both teams complete their first
+                five attempts if the score makes it mathematically impossible
+                for one side to catch up. If both teams have taken five kicks
+                and remain level, the contest moves into additional rounds.
+            </p>
+
+            <div class="highlight">
+                <strong>Remember:</strong> Five kicks per team is the standard
+                opening format, not a guaranteed total. A shootout may involve
+                fewer kicks or continue beyond the first ten attempts.
+            </div>
+
+            <div class="kick-grid">
+                <div class="kick"><strong>1</strong><span>Kick</span></div>
+                <div class="kick"><strong>2</strong><span>Kick</span></div>
+                <div class="kick"><strong>3</strong><span>Kick</span></div>
+                <div class="kick"><strong>4</strong><span>Kick</span></div>
+                <div class="kick"><strong>5</strong><span>Kick</span></div>
+            </div>
+
+            <h2 id="how-it-works">How Does a Football Penalty Shootout Work?</h2>
+
+            <p>
+                A penalty shootout is used when a competition needs to produce
+                a winner after a match finishes level and its regulations
+                require a decisive result. Depending on the competition,
+                penalties may follow normal time or extra time.
+            </p>
+
+            <p>
+                Once the match has ended, the referee organises the shootout.
+                The teams take turns kicking from the penalty mark, with one
+                player attempting to score against the opposing goalkeeper.
+                The referee records each attempt and makes sure the procedure
+                follows the Laws of the Game.
+            </p>
+
+            <p>
+                The standard opening sequence follows a simple pattern:
+            </p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <strong>First kick</strong>
+                    Team A takes the opening penalty.
+                </div>
+                <div class="timeline-item">
+                    <strong>Second kick</strong>
+                    Team B takes its first penalty.
+                </div>
+                <div class="timeline-item">
+                    <strong>Third and fourth kicks</strong>
+                    Both teams take their second attempts.
+                </div>
+                <div class="timeline-item">
+                    <strong>Fifth to tenth kicks</strong>
+                    The teams continue alternating until each has taken five,
+                    unless the result is already decided.
+                </div>
+            </div>
+
+            <p>
+                This alternating arrangement gives both sides the same number
+                of opportunities during the opening round. It also creates
+                pressure because a missed attempt can change the situation
+                for the next player.
+            </p>
+
+            <h2 id="early-ending">Can a Penalty Shootout End Before Five Kicks?</h2>
+
+            <p>
+                Yes. The five-kick format does not mean every player must
+                complete an attempt. The shootout ends as soon as one team
+                has scored more goals than the other team could possibly
+                achieve with its remaining kicks.
+            </p>
+
+            <p>
+                For example, imagine Team A has scored four goals from its
+                first four attempts, while Team B has scored only one goal
+                from its first four. Team B has just one opening-round kick
+                remaining. Even if it scores, its total would be two, which
+                is fewer than Team A's four. The shootout is therefore over.
+            </p>
+
+            <div class="mini-card">
+                <h3>Example: An early decision</h3>
+                <table class="comparison">
+                    <thead>
+                        <tr>
+                            <th>Team</th>
+                            <th>Goals scored</th>
+                            <th>Kicks taken</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Team A</td>
+                            <td>4</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Team B</td>
+                            <td>1</td>
+                            <td>4</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    Team B cannot catch Team A with only one kick left.
+                    Team A wins without needing to take its fifth penalty.
+                </p>
+            </div>
+
+            <p>
+                This rule prevents unnecessary attempts once the winner is
+                already known. It also means that a team can win a shootout
+                without using all five of its initial penalties.
+            </p>
+
+            <h2 id="sudden-death">What Happens If Both Teams Score the Same Number of Penalties?</h2>
+
+            <p>
+                If both teams have completed five kicks and the score remains
+                level, the shootout moves into sudden death. This is the
+                stage where every additional attempt becomes especially
+                important.
+            </p>
+
+            <p>
+                In sudden death, teams continue taking one kick each in
+                alternating order. The winner is decided when one team scores
+                and the other team fails to score from the same number of
+                attempts. Both sides must have taken an equal number of kicks
+                for the result to count.
+            </p>
+
+            <h3>A simple sudden-death example</h3>
+
+            <table class="comparison">
+                <thead>
+                    <tr>
+                        <th>Round</th>
+                        <th>Team A</th>
+                        <th>Team B</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>After five</td>
+                        <td>4 goals</td>
+                        <td>4 goals</td>
+                        <td>Level</td>
+                    </tr>
+                    <tr>
+                        <td>Round 6</td>
+                        <td>Scores</td>
+                        <td>Misses</td>
+                        <td>Team A wins</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>
+                In this example, Team A wins because both sides have taken
+                six kicks and Team A has scored one more goal. If both players
+                scored, the shootout would continue to another round.
+            </p>
+
+            <p>
+                There is no fixed maximum number of kicks in the standard
+                sudden-death procedure. The contest can continue through
+                multiple rounds until a winner is determined.
+            </p>
+
+            <h2 id="player-order">Who Takes the Penalties in a Shootout?</h2>
+
+            <p>
+                Teams choose their penalty takers from the players who are
+                eligible under the competition's rules and the Laws of the
+                Game. In a standard senior match, this generally means players
+                who were on the field or temporarily off it for a permitted
+                reason when the match ended.
+            </p>
+
+            <p>
+                Coaches usually select players based on confidence, technique,
+                experience and their ability to handle pressure. A team may
+                prefer experienced forwards or midfielders, but there is no
+                requirement that only attacking players take penalties.
+                Defenders and goalkeepers can also be selected if eligible.
+            </p>
+
+            <h3>Can the same player take two penalties?</h3>
+
+            <p>
+                Not during the initial rotation while other eligible teammates
+                have not yet taken their first kicks. Each kick must be taken
+                by a different player until all eligible players on that team
+                have had an opportunity.
+            </p>
+
+            <p>
+                If the shootout continues after everyone eligible has taken
+                a kick, players can take another attempt. Teams may also
+                change the order of their kickers in later rounds.
+            </p>
+
+            <h2 id="rules">Important Rules Every Fan Should Know</h2>
+
+            <p>
+                The five-kick format is only one part of a penalty shootout.
+                Several additional rules help keep the process fair and
+                consistent for both teams.
+            </p>
+
+            <ul>
+                <li>
+                    <strong>Alternating attempts:</strong> Teams take kicks
+                    one after the other rather than completing all their
+                    attempts at once.
+                </li>
+                <li>
+                    <strong>Different players:</strong> Each eligible player
+                    must take a first kick before a teammate can take a
+                    second one.
+                </li>
+                <li>
+                    <strong>Goalkeeper participation:</strong> Goalkeepers
+                    defend penalties and may also take a kick if eligible.
+                </li>
+                <li>
+                    <strong>Equal numbers:</strong> If one team has more
+                    eligible players than the other, the team with more
+                    players must reduce its numbers to match.
+                </li>
+                <li>
+                    <strong>Referee records:</strong> The referee keeps track
+                    of the attempts and their outcomes.
+                </li>
+                <li>
+                    <strong>Early conclusion:</strong> The shootout ends
+                    when one side has an unbeatable advantage.
+                </li>
+            </ul>
+
+            <p>
+                These procedures are important because penalty shootouts
+                are not simply informal contests between goalkeepers and
+                penalty takers. They are governed by specific rules that
+                determine who can participate and how the winner is decided.
+            </p>
+
+            <h2 id="strategy">Why Does the Order of Penalty Takers Matter?</h2>
+
+            <p>
+                Choosing the right players and deciding their order can
+                influence how a team handles the pressure of a shootout.
+                Although every penalty has the same basic objective, the
+                psychological situation can change from one attempt to
+                another.
+            </p>
+
+            <p>
+                Some coaches place confident penalty takers early because
+                a successful start can settle the team. Others prefer to
+                reserve certain players for later attempts, particularly
+                when they expect the shootout to reach sudden death.
+                There is no single order that guarantees success.
+            </p>
+
+            <h3>Confidence and pressure</h3>
+
+            <p>
+                A player may have excellent shooting technique but still
+                struggle with the pressure of a decisive kick. The crowd,
+                goalkeeper's movements and importance of the match can all
+                affect concentration. Teams therefore consider both technical
+                ability and mental readiness when selecting their takers.
+            </p>
+
+            <h3>Goalkeeper preparation</h3>
+
+            <p>
+                Goalkeepers also play an important role. They may study
+                opponents' previous penalties, observe body movements and
+                make decisions about which direction to dive. A save can
+                change the momentum of the shootout, although the goalkeeper
+                must still follow the relevant rules when facing each kick.
+            </p>
+
+            <h2 id="mistakes">Common Misunderstandings About Penalty Shootouts</h2>
+
+            <h3>Every team must take exactly five penalties</h3>
+            <p>
+                This is incorrect. Five is the standard number of opening
+                kicks, but a shootout can end earlier when the result becomes
+                mathematically certain.
+            </p>
+
+            <h3>Sudden death begins after a single missed penalty</h3>
+            <p>
+                Not necessarily. A missed kick does not automatically start
+                sudden death. The opening five-kick round continues unless
+                one team gains an unbeatable lead. Sudden death begins when
+                both teams have completed five kicks and remain level.
+            </p>
+
+            <h3>Penalty shootouts always follow extra time</h3>
+            <p>
+                Not in every competition. Tournament regulations determine
+                whether a drawn match goes directly to penalties or includes
+                extra time first. Fans should check the specific competition
+                format rather than assume every match follows the same process.
+            </p>
+
+            <h3>A penalty shootout has a fixed maximum number of kicks</h3>
+            <p>
+                The standard procedure does not set a fixed maximum for
+                sudden-death attempts. If the teams keep scoring at the same
+                rate, the shootout continues until one side gains an advantage
+                after an equal number of kicks.
+            </p>
+
+            <h2>How Penalty Shootouts Fit Into Football Competitions</h2>
+
+            <p>
+                Penalty shootouts are especially common in knockout football,
+                where a competition must decide which team advances to the
+                next round. They can appear in domestic cup matches,
+                international tournaments and other competitions that require
+                a winner.
+            </p>
+
+            <p>
+                League matches generally allow a draw, so they do not normally
+                need a penalty shootout. Knockout competitions have different
+                regulations, and some may use extra time before penalties.
+                Understanding these formats makes it easier to follow the
+                result of a match and know what happens next.
+            </p>
+
+            <p>
+                Fans interested in the wider structure of knockout matches
+                can read this
+                <a href="https://football-knockout-rules.pages.dev/" target="_blank" rel="noopener noreferrer">football knockout rules guide</a>.
+                It provides additional context about how decisive matches
+                are organised.
+            </p>
+
+            <p>
+                Other match regulations can also affect the players available
+                to a team. For more information, explore this guide to
+                <a href="https://football-substitution-rules.infinityfreeapp.com/?i=1" target="_blank" rel="noopener noreferrer">football substitution rules</a>.
+                Understanding player changes helps explain why not every
+                substitute is automatically eligible to take part in a
+                shootout.
+            </p>
+
+            <p>
+                Football has many other rules that shape how a match develops.
+                You can also explore
+                <a href="https://soccer-offside-rules.great-site.net/?i=1" target="_blank" rel="noopener noreferrer">soccer offside rules</a>
+                to understand how attacking positions and offside decisions
+                work during normal play.
+            </p>
+
+            <h2>Following Football Matches and Their Decisive Moments</h2>
+
+            <p>
+                Penalty shootouts are among the most dramatic moments in
+                football because a single kick can determine the outcome
+                of an entire competition. Knowing the rules makes these
+                situations easier to understand, especially when a match
+                moves beyond normal time.
+            </p>
+
+            <p>
+                Supporters who want to follow football coverage and match
+                information can visit
+                <a href="https://futbol-libre.live/" target="_blank" rel="noopener noreferrer">futbol-libre.live</a>.
+                Following the game alongside a basic understanding of its
+                regulations helps fans appreciate the decisions, tactics
+                and moments that shape a result.
+            </p>
+
+            <h2 id="faq">Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <h3>1. How many penalties does each team take first?</h3>
+                <p>
+                    Each team normally takes up to five kicks in the initial
+                    round. The attempts are taken alternately, and the
+                    shootout may end earlier if one team has an unbeatable
+                    lead.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>2. What happens if both teams score five penalties?</h3>
+                <p>
+                    If both teams score the same number of goals after five
+                    attempts each, the shootout continues into sudden death.
+                    Each team takes another kick until one side leads after
+                    an equal number of attempts.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>3. Can a team win after taking fewer than five penalties?</h3>
+                <p>
+                    Yes. If the opposing team cannot mathematically catch up
+                    with its remaining kicks, the shootout ends immediately.
+                    The winning team does not need to take all five attempts.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>4. Is there a limit to sudden-death penalties?</h3>
+                <p>
+                    There is no fixed maximum in the standard procedure.
+                    Teams continue taking one kick each until one scores
+                    and the other fails to score from the same number
+                    of attempts.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>5. Can a goalkeeper take a penalty in a shootout?</h3>
+                <p>
+                    Yes. A goalkeeper can take a kick if eligible under the
+                    applicable rules. Goalkeepers are not restricted to
+                    defending the goal.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>6. Can the same player take another penalty?</h3>
+                <p>
+                    A player cannot take a second kick until all eligible
+                    teammates have taken their first kicks. After that,
+                    players can take further attempts if the shootout
+                    continues.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>7. Do all football competitions use penalty shootouts?</h3>
+                <p>
+                    No. Competition regulations decide how a tied match is
+                    resolved. Some competitions allow a draw, while others
+                    may use extra time, penalties or another permitted
+                    procedure.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>8. Does a missed penalty mean the team loses?</h3>
+                <p>
+                    No. One missed attempt does not automatically decide
+                    the result. The final outcome depends on the total
+                    goals scored and the number of kicks remaining.
+                </p>
+            </div>
+
+            <div class="related">
+                <h2>Keep Exploring Football Rules</h2>
+                <p>
+                    Understanding the penalty shootout format is one part
+                    of learning how football competitions work. Explore
+                    the related guides above to learn more about knockout
+                    matches, substitutions and offside decisions.
+                </p>
+                <p>
+                    For more football information and match-related content,
+                    visit <a href="https://futbol-libre.live/" target="_blank" rel="noopener noreferrer">futbol-libre.live</a>.
+                </p>
+            </div>
+
+            <div class="source-note">
+                <strong>Official rules reference:</strong>
+                This article follows the standard penalty shootout procedure
+                described in IFAB Law 10, Determining the Outcome of a Match.
+                Competition regulations may specify how a tied match is
+                decided.
+                <br><br>
+                <a href="https://www.theifab.com/laws/latest/determining-the-outcome-of-a-match/" target="_blank" rel="noopener noreferrer">
+                    Read IFAB Law 10 – Determining the Outcome of a Match
+                </a>
+            </div>
+
+        </main>
+    </div>
+</div>
+
+<footer class="site-footer">
+    <p>Football Rules Guide · Clear explanations for football fans</p>
+    <p>Learn the game. Understand the rules. Enjoy every moment.</p>
+</footer>
+
+</body>
+</html>
